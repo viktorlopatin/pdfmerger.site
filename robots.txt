@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /cgi-bin/
+Allow: /
+
+Sitemap: https://pdfmerger.site/sitemap.xml
