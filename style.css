@@ -186,6 +186,39 @@ main {
   display: none;
 }
 
+.mobile-upload {
+  display: none; /* за замовчуванням ховаємо мобільний текст */
+}
+
+
+/* ==== MOBILE STYLES ==== */
+@media (hover: none) and (pointer: coarse) {
+  .upload-empty,
+  .file-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .upload-empty .upload-label,
+  .file-actions label,
+  .file-actions .merge-btn {
+    text-align: center;
+  }
+
+  /* Ховаємо старий текст у <p> */
+  .upload-empty p {
+    display: none;
+  }
+
+  /* Показуємо мобільний <label> */
+  .upload-empty p.mobile-upload {
+    display: block;
+    text-align: center;
+  }
+}
+
 
 /* ==== FOOTER ==== */
 footer {
