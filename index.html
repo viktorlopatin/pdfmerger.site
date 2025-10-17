@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Merge PDF files and convert images (JPG, PNG, BMP, HEIC) into PDF online for free. Secure, fast, and easy PDF merging directly in your browser.">
+  <meta name="keywords" content="merge PDF, combine PDF, images to PDF, convert images to PDF, PDF joiner online, free PDF tool, online PDF converter, PDF editor, PDF merger">
+  <meta name="author" content="YourCompanyName">
+  <meta name="robots" content="index, follow">
+  <title>Merge PDFs & Convert Images to PDF Online — Free Tool</title>
+
+  <link rel="icon" type="image/png" href="favicon.png" alt="PDF Merger Icon" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Merge PDFs and Images into One File</h1>
+    <p>Free online tool to merge PDFs and images into a single document directly in your browser.</p>
+  </header>
+
+  <main>
+    <div class="upload-area" id="uploadArea">
+      <div class="upload-empty" id="uploadEmpty">
+        <p>Drag and drop your files here or <label for="fileInput" class="upload-label">browse</label></p>
+        <input type="file" id="fileInput" multiple accept=".pdf,image/*">
+      </div>
+
+      <ul class="file-list hidden" id="fileList"></ul>
+
+      <div class="file-actions hidden" id="fileActions">
+        <label for="fileInput" class="add-more-btn">➕ Add more files</label>
+        <button id="mergeBtn" class="merge-btn">Merge PDFs</button>
+      </div>
+    </div>
+  </main>
+
+  <section class="seo">
+    <h2>Merge PDF Files Online — Simple, Secure, and Free</h2>
+    <p>Our free tool allows you to merge multiple PDF or image files into one. You can easily rearrange the order by dragging and dropping files. All processing happens directly in your browser — nothing is uploaded to our servers, ensuring complete privacy.</p>
+    <p>Supported formats: PDF, JPG, PNG, BMP, HEIC. Perfect for creating reports, portfolios, or combined photo documents.</p>
+  </section>
+
+
+  <footer>
+    <p>© 2025 Merge PDF Online — All Rights Reserved.</p>
+  </footer>
+
+  <!-- PDF.js для рендера прев’ю PDF -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.14.305/pdf.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

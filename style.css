@@ -1,0 +1,198 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: #f8f8f8;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ==== HEADER ==== */
+header {
+  text-align: center;
+  padding: 20px 15px; /* менше висоти */
+  background: #ffffff;
+  border-bottom: 1px solid #ddd;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.04);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+header .logo {
+  width: 44px; /* менший розмір */
+  height: 44px;
+}
+
+header h1 {
+  font-size: 1.6rem; /* трохи менше */
+  margin-bottom: 4px;
+  color: #222;
+}
+
+header p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+
+/* ==== MAIN ==== */
+main {
+  max-width: 800px;
+  margin: 40px auto;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+/* ==== UPLOAD AREA ==== */
+.upload-area {
+  border: 2px dashed #ccc;
+  border-radius: 12px;
+  padding: 40px 20px;
+  text-align: center;
+  color: #555;
+  transition: all 0.3s ease;
+}
+
+.upload-area.dragover {
+  border-color: #888;
+  background: #f1f1f1;
+  color: #333;
+}
+
+.upload-label {
+  color: #444;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* ==== FILE LIST ==== */
+.file-list {
+  list-style: none;
+  margin-top: 20px;
+  text-align: left;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.file-item {
+  background: #fcfcfc;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  cursor: grab;
+  transition: background 0.2s;
+  position: relative;
+  -webkit-mask-image: -webkit-radial-gradient(white, black); /* 👈 запобігає “рваним” краям */
+}
+
+.file-item:hover {
+  background: #f1f1f1;
+}
+
+.file-item img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* ==== REMOVE BUTTON ==== */
+.file-item button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: #ccc;
+  border: none;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.file-item button:hover {
+  background: #999;
+  transform: scale(1.2);
+}
+
+
+
+/* ==== ACTION BUTTONS ==== */
+.file-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.add-more-btn {
+  color: #333;
+  cursor: pointer;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.merge-btn {
+  padding: 12px 24px;
+  background: #e0e0e0;
+  color: #222;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.merge-btn:hover {
+  background: #ccc;
+}
+
+/* ==== SEO SECTION ==== */
+.seo {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  line-height: 1.8;
+  color: #444;
+}
+
+/* Ховаємо стандартне поле вибору файлів */
+#fileInput {
+  display: none;
+}
+
+
+/* ==== FOOTER ==== */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #777;
+  background: #f9f9f9;
+  border-top: 1px solid #ddd;
+  margin-top: 40px;
+}
