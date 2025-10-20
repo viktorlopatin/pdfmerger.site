@@ -1,0 +1,11 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "site.pdfmerger.twa",
+      "sha256_cert_fingerprints":
+        ["34:B5:32:AF:8F:EF:B3:AE:A5:0D:E8:52:0E:27:B9:DB:74:A8:15:E3:B6:2C:8B:A3:9D:29:35:AC:9A:6A:79:CA"] 
+    }
+  }
+]
