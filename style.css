@@ -172,15 +172,6 @@ main {
   background: #ccc;
 }
 
-/* ==== INFO SECTION ==== */
-.info {
-  max-width: 800px;
-  margin: 40px auto;
-  padding: 20px;
-  line-height: 1.8;
-  color: #444;
-}
-
 /* Ховаємо стандартне поле вибору файлів */
 #fileInput {
   display: none;
@@ -221,11 +212,30 @@ main {
 
 
 /* ==== FOOTER ==== */
-footer {
+/* ==== Footer ==== */
+.site-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
   text-align: center;
-  padding: 20px;
-  color: #777;
-  background: #f9f9f9;
-  border-top: 1px solid #ddd;
-  margin-top: 40px;
+  background: linear-gradient(90deg, #fdfbfb, #e3f2fd);
+  border-top: 1px solid rgba(0,0,0,0.1);
+  font-size: 12px;
+  color: #444;
+  z-index: 100;
+  box-shadow: 0 -3px 10px rgba(0,0,0,0.05);
+}
+
+.site-footer a {
+  background: linear-gradient(90deg, var(--accent1, #0078ff), var(--accent2, #00e0ff));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+  text-decoration: none;
+  transition: opacity .2s ease;
+}
+
+.site-footer a:hover {
+  opacity: 0.7;
 }
